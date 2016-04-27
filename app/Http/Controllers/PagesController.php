@@ -16,7 +16,7 @@ class PagesController extends Controller{
 
 	}
 
-public function about()
+	public function about()
 	{
 
 

@@ -14,6 +14,10 @@
 //Route::get('/', function () {
     //return view('Pages.about');
 //});
+
+/* In  this case the route loads a class to process the get - page request 
+*/
+
 Route::get('/','PagesController@home');
 
 Route::get('/about','PagesController@about');

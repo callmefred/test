@@ -27,8 +27,7 @@ class CardsController extends Controller
 
     {
     	
-
-    	//return $card;
+	   	//return $card;
     	//$card = Card::find($id);
 
     	return view('cards.show',compact('card'));
