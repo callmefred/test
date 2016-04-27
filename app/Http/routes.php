@@ -27,3 +27,5 @@ Route::get('/cards','CardsController@index');
 // {card} is a variable name
 
 Route::get('/cards/{card}','CardsController@show');
+
+Route::post('/cards/{card}/notes','NotesController@store');
