@@ -1,5 +1,4 @@
 <?php
-
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -35,5 +34,7 @@ Route::group(['middleware' => ['web']], function() {
 	Route::get('/notes/{note}/edit','NotesController@edit');
 
 	route::patch('notes/{note}','NotesController@update');
+
+	route::delete('notes/{note}','NotesController@delete');
 
 });

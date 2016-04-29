@@ -49,6 +49,16 @@ class NotesController extends Controller
 
     }
 
+    public function delete(Request $request,Note $note)
+    {
+
+    	$note->delete();
+
+    	return redirect()->action('CardsController@index');
+
+    }
+
+
 
 
 }

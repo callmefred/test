@@ -34,7 +34,7 @@
 
 					<div class="form-group">
 
-						<textarea name="body"  class="form-control"></textarea>
+						<textarea name="body"  class="form-control">{{old('body')}}</textarea>
 						
 					</div>
 
@@ -45,7 +45,9 @@
 					</div>
 				</form>
 
-				{{var_dump($errors)}}
+
+
+				
 
 				@if (count($errors))
 

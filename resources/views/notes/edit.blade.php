@@ -3,7 +3,7 @@
 
 @section('content')
 
-				<h1>Edit a Note</h1>
+				<h1>Not Happy Change Your Comment</h1>
 
 				<form method="POST" action="/notes/{{ $note->id }}">
 
@@ -20,7 +20,20 @@
 
 					<div class="form-group">
 
-						<button type="submit" class="btn btn-primary">Update Note</button>
+						<button type="submit" class="btn btn-primary">Update comment</button>
+
+					</div>
+				</form>
+
+				<form method="POST" action="/notes/{{ $note->id }}">
+
+				{{method_field('DELETE')}}
+
+				{!! csrf_field() !!}
+
+					<div class="form-group">
+
+						<button type="submit" class="btn btn-primary">Delete Comment</button>
 
 					</div>
 				</form>

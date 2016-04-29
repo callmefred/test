@@ -1,5 +1,7 @@
 <?php
 
+// This sectio is not used by my code at the moment
+
 namespace App;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;

@@ -2,7 +2,7 @@
 
 @section('content')
 
-	<h1>All Cards</h1>
+	<h3>Choose your match and post a comment</h3>
 
 	@foreach($cards as $card)
 
