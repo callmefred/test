@@ -1,5 +1,7 @@
 <?php
 
+// These are not used but are accesable via ROUTES
+
 namespace App\Http\Controllers;
 
 //use Illuminate\Http\Request;

@@ -1,3 +1,4 @@
+<!-- this page displays the games to be commented upon -->
 @extends('layout')
 
 @section('content')

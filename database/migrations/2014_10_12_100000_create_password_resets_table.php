@@ -1,5 +1,8 @@
 <?php
 
+/* auto generated table not used in this code
+*/
+
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 

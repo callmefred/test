@@ -1,3 +1,5 @@
+<!-- Update page for notes -->
+
 @extends('layout')
 
 
@@ -28,7 +30,7 @@
 				<form method="POST" action="/notes/{{ $note->id }}">
 
 				{{method_field('DELETE')}}
-
+<!-- csrf is a security token -->
 				{!! csrf_field() !!}
 
 					<div class="form-group">

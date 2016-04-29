@@ -12,6 +12,7 @@ use App\Http\Requests;
 
 class CardsController extends Controller
 {
+//The index function is used to create new comments in the notes table 
     public function index()
 
     {

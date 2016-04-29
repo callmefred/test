@@ -1,4 +1,7 @@
 <?php
+/* This is an auto generated table, the 1st user needs to be manually set
+    at the moment to run this code 
+*/
 
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;

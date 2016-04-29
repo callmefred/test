@@ -1,4 +1,6 @@
 <?php
+/* The cards table holds the comments and is set via the code
+*/
 
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;

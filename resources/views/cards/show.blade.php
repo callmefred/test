@@ -1,3 +1,4 @@
+<!-- main display view showing comments posted for each match and allows for new posts -->
 @extends('layout')
 
 
@@ -47,7 +48,8 @@
 
 
 
-				
+<!-- this section does not work, it should show errors but remains blank -->
+<!-- error are shown from bag 175 and this should be bag 144 -->				
 
 				@if (count($errors))
 

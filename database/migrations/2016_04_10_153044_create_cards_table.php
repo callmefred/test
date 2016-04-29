@@ -1,4 +1,7 @@
 <?php
+/*The card table is used to hold the name of the matches to comment on
+* it requires to be populated through Tinker to allow the code to be used
+*/
 
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;

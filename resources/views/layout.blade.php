@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-
+<!-- Main template that all views inherit from -->
 <html>
     <head>
         

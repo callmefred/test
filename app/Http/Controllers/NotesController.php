@@ -15,6 +15,9 @@ use App\http\Controllers\Controller;
 
 class NotesController extends Controller
 {
+
+//The store function is used to create new comments in the notes table 
+
     public function store(Request $request, Card $card)
     {
 
@@ -33,12 +36,16 @@ class NotesController extends Controller
 
     }
 
+//The edit function is used to edit comments in the notes table 
+
     public function edit(Note $note)
     {
 
     	return view('notes.edit',compact('note'));	
 
     }
+
+//The update function is used to update comments in the notes table 
 
    public function update(Request $request,Note $note)
     {
@@ -48,6 +55,8 @@ class NotesController extends Controller
     	return back();
 
     }
+
+//The delete function is used to delete comments in the notes table 
 
     public function delete(Request $request,Note $note)
     {
