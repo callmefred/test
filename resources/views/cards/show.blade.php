@@ -13,17 +13,25 @@
 		
 				@foreach($card->notes as $note)
 
-					<li class="list-group-item">{{$note->body}}</li>
+					<li class="list-group-item">
+
+					<a href="/notes/{{ $note->id }}/edit">{{$note->body}}</a>
+
+					<a href="#" style="pull:right">{{$note->user->username}}</a>
+
+					</li>
 
 				@endforeach
 
 			</ul>
 
-				<h3>Add a new note</h3>
+				<h3>Tell it like it is</h3>
 
 				<form method="POST" action="/cards/{{ $card->id }}/notes">
 
-{!! csrf_field() !!}
+					
+					{!! csrf_field() !!}
+
 					<div class="form-group">
 
 						<textarea name="body"  class="form-control"></textarea>
@@ -36,6 +44,20 @@
 
 					</div>
 				</form>
+
+				{{var_dump($errors)}}
+
+				@if (count($errors))
+
+					<ul>
+
+						@foreach ($errors->all() as $error)
+							<li>{{ $error }}</li>
+						@endforeach
+
+					</ul>
+
+				@endif
 		</div>
 	</div>
 

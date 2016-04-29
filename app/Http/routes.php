@@ -18,16 +18,22 @@
 /* In  this case the route loads a class to process the get - page request 
 */
 
-Route::get('/','PagesController@home');
+Route::group(['middleware' => ['web']], function() {
 
-Route::get('/about','PagesController@about');
+	Route::get('/','PagesController@home');
 
-Route::get('/cards','CardsController@index');
+	Route::get('/about','PagesController@about');
 
-// {card} is a variable name
+	Route::get('/cards','CardsController@index');
 
-Route::get('/cards/{card}','CardsController@show');
+	// {card} is a variable name
 
-Route::post('/cards/{card}/notes','NotesController@store');
+	Route::get('/cards/{card}','CardsController@show');
 
-Route::get('/notes/{note}/edit','NotesController@edit');
+	Route::post('/cards/{card}/notes','NotesController@store');
+
+	Route::get('/notes/{note}/edit','NotesController@edit');
+
+	route::patch('notes/{note}','NotesController@update');
+
+});
