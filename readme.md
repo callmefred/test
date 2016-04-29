@@ -25,3 +25,26 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+
+## Instructions
+
+This code requires that it is run in the homestead VM and that the database tables are created using php artisan migrate
+
+The card table needs at least one record creating in tinker
+
+namespace App;
+$card = new Card;
+$card->title = 'details of the match'
+$card->save();
+
+create 3 records to have choice
+
+a user record also need to be created 
+
+$user = new User;
+$user->username = 'paul steele';
+$user->username = 'test@test.com:
+$user->password = bcrypt('password');
+$user->save();
+
+this will allow the code to run

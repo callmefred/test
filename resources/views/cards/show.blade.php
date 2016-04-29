@@ -3,6 +3,7 @@
 
 
 @section('content')
+<a href="/cards">Return to Matches</a>
 
 	<div class="row">
 
@@ -18,7 +19,7 @@
 
 					<a href="/notes/{{ $note->id }}/edit">{{$note->body}}</a>
 
-					<a href="#" style="pull:right">{{$note->user->username}}</a>
+					<a href="#" style="float:right">{{$note->user->username}}</a>
 
 					</li>
 

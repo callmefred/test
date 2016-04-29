@@ -4,6 +4,10 @@
 
 
 @section('content')
+<a href="/cards">Return to Matches</a>
+
+	<div class="row">
+		<div class="col-md-6 col-md-offset-3">
 
 				<h1>Not Happy Change Your Comment</h1>
 
@@ -39,5 +43,6 @@
 
 					</div>
 				</form>
-
+	</div>
+</div>
 @stop
